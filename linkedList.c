@@ -17,8 +17,7 @@ struct node* insert_front( struct node* head, int x) {
   struct node* temp = malloc(sizeof(struct node));
   temp->i = x;
   temp->next = head;
-  head = temp;
-  return head;
+  return temp;
 }
 
 struct node* free_list( struct node* head) {
